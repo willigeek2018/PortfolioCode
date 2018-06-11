@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ourGrid {
+  display: grid;
+  min-height: 100vh;
+  
+  /* Dense will try to fill the empty spaces if there are some . */
+  
+  grid-auto-flow: row dense;
+  
+  /* assign templates with grid line names */
+  
+  grid-template-columns: [col-line-start] 100px [col-line-2] 1fr [col-line-3] 100px [col-line-end];
+  
+  grid-template-areas: "header header header"
+                       "sidebar content content"
+                       "sidebar content content";
+  
+  
+  grid-template-rows: repeat(3, 1fr);
+  
+  border: 10px solid blue;
+}
+
+.gridItem {
+  border: 10px solid red;
+}
+
+.gridItemSpecial {
+  /*
+  grid-column: col-line-start / col-line-end;
+  
+  */
+  
+  grid-area: content;
+  border-color: yellow;
+}
+

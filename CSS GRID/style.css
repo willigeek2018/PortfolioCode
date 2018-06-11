@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  
+  padding: 1em;
+  border: 5px solid red;
+}
+
+.gridItem {
+  background-color: yellow; 
+  min-height: 200px;
+  
+  /* Style and center the numbers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: black;
+  font-size: 5em;
+  
+  grid-row: 1 / span 2;
+}
+
+.gridItem:nth-child(even) {
+  background-color: orange;
+}
+
+.gridItemSpecial {
+  /*
+  grid-column-start: 3;
+  grid-column-end: 5;
+  
+  grid-row-start: 2;
+  grid-row-end: 4;
+  
+  */
+  
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+  
+  background-color: hotpink;
+}
+
+.gridItem.gridItemOverlay {
+  background-color: red;
+  color: white;
+  
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  
+  z-index: 1;
+}
