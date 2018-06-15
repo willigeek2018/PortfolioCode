@@ -25,6 +25,8 @@ p {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    
+    border-bottom: 2px solid black;
 }
 
 .poster_elmt.posterTitle {
