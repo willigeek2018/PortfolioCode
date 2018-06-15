@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.thePoster {
+    width: 370px;
+    height: 600px;
+    background-color: #395585;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.poster_elmt.posterTitle {
+    grid-column: 4 / 13;
+    grid-row: 2 / 3;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #eaebef;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    
+    margin: 0;
+}
+
+.poster_elmt.posterTxtOne {
+    grid-column: 3 / 12;
+    grid-row: 3 /4;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txtOne {
+    width: 35%;
+    font-size: .2em;
+    font-family: 'Arial', sans-serif;
+    text-align: right;
+    color: aliceblue;
+}
+
+.poster_elmt.posterTxtTwo {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    padding-right: 5px;
+}
+
+.txtTwo {
+    width: 40%;
+    font-size: .3em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    text-align: right;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.poster_elmt.posterTxtThree {
+    grid-column: 7 / 12;
+    grid-row: 4 / 5;
+}
+.poster_elmt.posterTxtFour {
+    grid-column: 1 / 11;
+    grid-row: 5 / 6;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txtFour {
+    width: 25%;
+    font-size: .2em;
+    font-family: 'Arial', sans-serif;
+    text-align: right;
+    text-transform: capitalize;
+    
+    margin-left: -80px;
+}
+
+.poster_elmt.posterTxtFive {
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    color: darkgrey;
+}
+
+.txtFive {
+    width: 71%;
+    font-size: .2em;
+    font-family: 'Arial', sans-serif;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.poster_elmt.posterTxtSix {
+    grid-column: 5 /10;
+    grid-row: 6 / 7;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.txtSix {
+    width: 30%;
+    font-size: .2em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    text-transform: capitalize;
+    
+    padding-right: 5px;
+}
+
+.poster_elmt.posterTxtSeven {
+    grid-column: 1 / 9;
+    grid-row: 7 / 8;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtEight {
+    grid-column: 1 / 8;
+    grid-row: 8 / 9;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtNine {
+    grid-column: 1 / 7;
+    grid-row: 9 / 10;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtTen {
+    grid-column: 1 / 6;
+    grid-row: 10 / 11;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtEleven {
+    grid-column: 1 / 5;
+    grid-row: 11 / 12;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtTwelve {
+    grid-column: 1 / 4;
+    grid-row: 12 / 13;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.poster_elmt.posterTxtThirteen {
+    grid-column: 1 / 13;
+    grid-row: 13 / 17;
+    
+    background-color: #395585;
+}
+
+.dark {
+    background-color: #232227;
+}
+
+.light {
+    background-color: #eaebef;
+}
+
+
