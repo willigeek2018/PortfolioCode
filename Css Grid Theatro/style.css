@@ -31,9 +31,15 @@ body {
 
 .borsellino {
   width: 500px;
+  height: auto;
   
   grid-column: 2 / 6;
   grid-row: 2 / 6;
+}
+
+.borsellino img {
+    width: 100%;
+    height: auto;
 }
 
 .borsellino img {
@@ -177,4 +183,12 @@ body {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
+  
+  .borsellino {
+  width: 350px;
+  height: auto;
+  
+  grid-column: 2 / 6;
+  grid-row: 2 / 6;
+}
 }
